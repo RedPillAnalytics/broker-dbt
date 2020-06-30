@@ -4,6 +4,8 @@
     )
 }}
 
+
+
 SELECT
   trade_key,
   customer_key,
