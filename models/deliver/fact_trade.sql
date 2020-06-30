@@ -1,3 +1,9 @@
+{{
+    config(
+        unique_key='trade_key'
+    )
+}}
+
 SELECT
   trade_key,
   customer_key,
