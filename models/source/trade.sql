@@ -18,4 +18,4 @@ SELECT
   bid_price,
   trade_price
 FROM
-  {{var('source_schema')}}.trade
+  {{source('trt','trade')}}

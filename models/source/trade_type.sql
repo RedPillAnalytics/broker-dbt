@@ -9,4 +9,4 @@ SELECT
     WHEN 0 then 'Buy'
   END transaction_type
 FROM
-  {{var('source_schema')}}.trade_type
+  {{source('trt','trade_type')}}

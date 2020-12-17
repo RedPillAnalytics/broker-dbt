@@ -17,4 +17,4 @@ SELECT
   cdc_dsn,
   cdc_flag
 FROM
-  {{var('source_schema')}}.account
+  {{source('trt','account')}}

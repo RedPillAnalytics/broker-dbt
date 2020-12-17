@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: trt
+    database: BROKER_DATA
+    schema: TRT
+    loader: fivetran
+
+    tables:
+      - name: account
+      - name: customer
+      - name: employee
+      - name: status_type
+      - name: trade_type
+      - name: trade

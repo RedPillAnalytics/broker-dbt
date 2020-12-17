@@ -20,4 +20,4 @@ SELECT
   action_ts,
   action_type
 FROM
-  {{var('source_schema')}}.customer
+  {{source('trt','customer')}}

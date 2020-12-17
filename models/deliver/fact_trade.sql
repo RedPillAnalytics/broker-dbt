@@ -1,6 +1,7 @@
 {{
     config(
-        unique_key='trade_key'
+      materialized='incremental',
+      unique_key='trade_key'
     )
 }}
 

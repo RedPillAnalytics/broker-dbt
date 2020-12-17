@@ -34,6 +34,3 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   brokerage:
       materialized: table
-
-vars:
-  source_schema: trt

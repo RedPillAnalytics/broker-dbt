@@ -1,4 +1,4 @@
 SELECT
   *
 FROM
-  {{var('source_schema')}}.status_type
+  {{source('trt','status_type')}}
