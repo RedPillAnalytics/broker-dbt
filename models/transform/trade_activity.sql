@@ -22,9 +22,9 @@ SELECT
 FROM
   trade
 JOIN
-  {{ref('trade_type')}}
-USING
-  (trade_type)
+  {{ref('trade_type')} trt
+on
+trt.trade_id = trade.trade_type
 JOIN
   {{ref('status_type')}}
 USING

@@ -1,4 +1,5 @@
 SELECT
+  trade_id,
   trade_name trade_type,
   CASE IS_MRKT
     WHEN 1 then 'Market'
