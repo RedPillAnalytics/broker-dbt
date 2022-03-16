@@ -22,7 +22,7 @@ SELECT
 FROM
   trade
 JOIN
-  {{ref('trade_type')} trt
+  {{ref('trade_type')}} trt
 on
 trt.trade_id = trade.trade_type
 JOIN
