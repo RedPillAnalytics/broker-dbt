@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: fact_trade
+    columns:
+      - name: trade_key
+        tests:
+          - unique
+          - not_null
