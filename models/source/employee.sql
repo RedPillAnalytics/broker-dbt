@@ -1,5 +1,5 @@
 SELECT
-  {{dbt_utils.surrogate_key(['employee_id','branch'])}} broker_key,
+  {{dbt_utils.generate_surrogate_key(['employee_id','branch'])}} broker_key,
   *
 FROM
   {{source('trt','employee')}}

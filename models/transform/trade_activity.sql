@@ -17,7 +17,7 @@ FROM
   {{ref('trade')}}
 )
 SELECT
-  {{dbt_utils.surrogate_key(['trade_id','trade_dt','transaction_type','order_type'])}} trade_key,
+  {{dbt_utils.generate_surrogate_key(['trade_id','trade_dt','transaction_type','order_type'])}} trade_key,
   *
 FROM
   trade

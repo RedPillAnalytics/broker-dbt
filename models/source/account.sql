@@ -1,5 +1,5 @@
 SELECT
-  {{dbt_utils.surrogate_key(['account_id','customer_id'])}} account_key,
+  {{dbt_utils.generate_surrogate_key(['account_id','customer_id'])}} account_key,
   account_id,
   customer_id,
   customer_name,
